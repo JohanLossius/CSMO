@@ -18,29 +18,40 @@ h3 {
     text-decoration: underline;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Header */
 
 header {
     justify-content: center;
     width: 100%;
     display: flex;
+    background-color: #212221;
 }
 
 .header-menu {
     max-width: 160px;
     border: solid;
     border-color: white;
-    padding: 14px;
+    padding: 11px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-width: thin;
+    border-width: medium;
+    font-size: large;
+    margin: 5px;
+}
+
+.header-menu a {
+    margin: 5px;
 }
 
 .header-menu-item {
     color: white;
     display: block;
-    padding: 5px;
+    padding: 8px;
     font-weight: bold;
 }
 
@@ -49,7 +60,11 @@ header {
     border-color: white;
     padding-left: 25px;
     padding-right: 25px;
-    border-width: thin;
+    border-width: medium;
+}
+
+.logo-header {
+    width: 72%;
 }
 
 /* Footer */
@@ -69,13 +84,23 @@ padding: 2px;
 
 /* Home */
 
+.google-maps-iframe {
+    margin: auto;
+}
+
 .introduction-main {
     max-width: 70%;
     display: flex;
     justify-content: space-evenly;
-    margin: 30px auto;
+    margin: 30px auto  15px;
     font-weight: bold;
     font-size: large;
+}
+
+.CSM-introduction-youtube {
+    display: block;
+    margin: auto;
+    margin-bottom: 6%;
 }
 
 .chemistry-home {
@@ -113,6 +138,10 @@ padding: 2px;
     text-decoration: none;
 }
 
+.exhibit-div-home {
+    margin-bottom: 5%;
+}
+
 .exhibits-image {
     max-width: 350px;
 }
@@ -145,7 +174,7 @@ padding: 2px;
 
 .main-visit-section {
     text-align: center;
-    max-width: 550px;
+    max-width: 900px;
     margin: auto;
 }
 
@@ -155,24 +184,24 @@ padding: 2px;
 }
 
 .main-visit-section div {
-    margin: 8%;
+    margin: 5%;
 }
 
 .food-span, .admission-paragraph {
     font-weight: bold;
 }
 
-.toggle-display-div-visit-info {
-    display: none;
+#visit-us-icon {
+    display: block;
+    margin: auto;
 }
 
-#toggle-display-icon-id:checked ~ .toggle-display-div-visit-info {
-    display: inline;
+.to-top-div {
+    margin: 0;
+    display: block;
+    text-align: right;
 }
 
-.visit-us-class-label {
-    border-style: solid;
-    border-width: 3px;
-    border-color: white;
-    padding: 12px;
+.location-span {
+    font-weight: bold;
 }
