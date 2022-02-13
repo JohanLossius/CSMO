@@ -3,74 +3,104 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Explore Together" />
+    <meta name="description" content="The most spectactular science museom in the world has arrived in Norway, come Explore Together!" />
     <title>Community Science Museum Oslo</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="font-awesome/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Ranchers&display=swap" rel="stylesheet"> 
     <link href="styles/styles.css" rel="stylesheet" />
   </head>
   <body>
     <header>
-      <img src="images/csmo_logo_3.svg" alt="CSMO Logo" class="logo-header">
-      <div class="header-menu">
-        <a href="index.html" title="Home CSMO" class="header-menu-item header-menu-item-current">Home</a>
-        <a href="about.html" title="About" class="header-menu-item">About</a>
-        <a href="special-events.html" title="Special Events" class="header-menu-item">Special Events</a>
-        <a href="get-involved.html" title="Get Involved" class="header-menu-item">Get Involved</a>
-        <a href="contact.html" title="Contact" class="header-menu-item">Contact</a>
+      <div class="logo-container">
+        <a href="index.html" title="Home CSMO" ><img src="images/csmo-logo-3.png" alt="CSMO Logo" class="logo-header"></a>
+      </div>
+      <div class="csmo-nav-and-title-container">
+        <div class="csmo-title-container">
+          <a href="index.html" title="Home CSMO" class="csmo-title"><span>Community Science Museum Oslo</span></a>
+        </div>
+        <div>
+          <div class="header-menu">
+            <a href="index.html" title="Home CSMO" class="header-menu-item header-menu-item-current">Home</a>
+            <a href="about.html" title="About" class="header-menu-item">About</a>
+            <a href="special-events.html" title="Special Events" class="header-menu-item">Special Events</a>
+            <a href="get-involved.html" title="Get Involved" class="header-menu-item">Get Involved</a>
+            <a href="contact.html" title="Contact" class="header-menu-item">Contact</a>
+            <div class="exhibit-sub-nav-div">
+              <label for="bar-menu"><span class="exhibits-nav-span">Exhibits<img src="images/arrow-down-icon.svg" class="arrown-down-icon" alt="Exhibits Navigation"></span></label>
+              <input type="checkbox" id="bar-menu" class="checkbox-class">
+              <div class="header-menu-2 header-menu-item">
+                <a href="chemistry.html" title="Chemistry" class="header-menu-item">Chemistry</a>
+                <a href="outer-space.html" title="Astronomy" class="header-menu-item" >Astronomy</a>
+                <a href="paleontology.html" title="Paleontology" class="header-menu-item" >Paleontology</a>
+                <a href="physics.html" title="Physics" class="header-menu-item" >Physics</a>
+                <a href="virtual-reality.html" title="Virtual Reality" class="header-menu-item" >VR</a>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
     <main>
       <section class="introduction-main-section">
         <div class="introduction-main">
-          <h1>We love science, and now we want to share our Adventures with YOU!</h1>
+          <h1>Explore Together!</h1>
         </div>
-        <iframe class="CSM-introduction-youtube" width="1155,55" height="650" src="https://www.youtube.com/embed/6YcxqrKc2ns?start=4&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </section> 
-      <section class="exhibits-home">
+        <div class="introduction-main-youtube">
+          <iframe class="CSM-introduction-youtube" src="https://www.youtube.com/embed/6YcxqrKc2ns?start=4&autoplay=1&mute=1" title="YouTube video player: CSMO Introduction" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </section>
+      <section class="exhibit-title-section" id="exhibit-title-section">
+        <h2>Exhibits</h2>
+      </section>
+      <section class="exhibits-home" id="exhibits-home">
         <div class="chemistry-home exhibit-div-home">
-          <span class="exhibit-home-span"><a href="X">"The experiments of Chemistry are like Fireworks!"</a></span>
-          <span class="exhibit-home-span"><a href="X">– Liam (9)</a></span>
-          <div class="exhibit-img-div"><a href="X"><img src="images/chemistry-2.svg" alt="Chemistry" class="chemistry-image exhibits-image" ></a></div>
-          <div class="discover-cta"><a href="X"><img src="images/discover_button.svg" alt="Discover" class="CTA" ></a></div>
+          <span class="exhibit-home-span"><a href="chemistry.html" title="Chemistry Exhibit">"Chemistry is like Fireworks!"</a></span>
+          <span class="exhibit-home-span"><a href="chemistry.html" title="Chemistry Exhibit">– Liam (9)</a></span>
+          <div class="exhibit-img-div"><a href="chemistry.html" title="Chemistry Exhibit"><img src="images/chemistry-2.svg" alt="Chemistry" class="chemistry-image exhibits-image" ></a></div>
+          <a href="chemistry.html" class="discover-cta" title="Chemistry Exhibit">Discover</a>
         </div>
         <div class="outer-space-home exhibit-div-home">
-          <span class="exhibit-home-span"><a href="X">"I can't wait to observe the stars of Outer Space!" </a></span>
-          <span class="exhibit-home-span"><a href="X">– Sabrina (6)</a></span>
-          <div class="exhibit-img-div"><a href="X"><img src="images/outer-space-5.svg" alt="Outer Space" class="outer-space-image exhibits-image" ></a></div>
-          <div class="discover-cta"><a href="X"><img src="images/discover_button.svg" alt="Discover" class="CTA" ></a></div>
+          <span class="exhibit-home-span"><a href="outer-space.html" title="Outer Space Exhibit">"Outer Space – here I come!" </a></span>
+          <span class="exhibit-home-span"><a href="outer-space.html" title="Outer Space Exhibit">– Sabrina (6)</a></span>
+          <div class="exhibit-img-div"><a href="outer-space.html" title="Outer Space Exhibit"><img src="images/outer-space-5.svg" alt="Outer Space" class="outer-space-image exhibits-image" ></a></div>
+          <a href="outer-space.html" class="discover-cta" title="Outer Space Exhibit">Discover</a>
         </div>
         <div class="paleontology-home exhibit-div-home">
-          <span class="exhibit-home-span"><a href="X">"Paleontology is Nature's work of art!"</a></span>
-          <span class="exhibit-home-span"><a href="X">– Madeleine (13)</a></span>
-          <div class="exhibit-img-div"><a href="X"><img src="images/paleontology.svg" alt="Paleontology" class="paleontology-image exhibits-image" ></a></div>
-          <div class="discover-cta"><a href="X"><img src="images/discover_button.svg" alt="Discover" class="CTA" ></a></div>
+          <span class="exhibit-home-span"><a href="paleontology.html" title="Paleontology Exhibit">"Paleontology is Nature's work of art!"</a></span>
+          <span class="exhibit-home-span"><a href="paleontology.html" title="Paleontology Exhibit">– Madeleine (45)</a></span>
+          <div class="exhibit-img-div"><a href="paleontology.html" title="Paleontology Exhibit"><img src="images/paleontology.svg" alt="Paleontology" class="paleontology-image exhibits-image" ></a></div>
+          <a href="paleontology.html" class="discover-cta" title="Paleontology Exhibit">Discover</a>
         </div>
         <div class="physics-home exhibit-div-home">
-          <span class="exhibit-home-span"><a href="X">"Physics is the work of magicians!!"</a></span>
-          <span class="exhibit-home-span"><a href="X">– Kevin (31)</a></span>
-          <div class="exhibit-img-div"><a href="X"><img src="images/physics-2.svg" alt="Physics" class="physics-image exhibits-image" ></a></div>
-          <div class="discover-cta"><a href="X"><img src="images/discover_button.svg" alt="Discover" class="CTA" ></a></div>
+          <span class="exhibit-home-span"><a href="physics.html" title="Physics Exhibit">"Physics is the work of magicians!!"</a></span>
+          <span class="exhibit-home-span"><a href="physics.html" title="Physics Exhibit">– Kevin (31)</a></span>
+          <div class="exhibit-img-div"><a href="physics.html" title="Physics Exhibit"><img src="images/physics-2.svg" alt="Physics" class="physics-image exhibits-image" ></a></div>
+          <a href="physics.html" class="discover-cta" title="Physics Exhibit">Discover</a>
         </div>
         <div class="virtual-reality-home exhibit-div-home">
-          <span class="exhibit-home-span"><a href="X">"Virtual Reality is a whole new world!"</a></span>
-          <span class="exhibit-home-span"><a href="X">– Emma (45)</a></span>
-          <div class="exhibit-img-div"><a href="X"><img src="images/virtual-reality-5.svg" alt="Virtual Reality" class="vr-image exhibits-image" ></a></div>
-          <div class="discover-cta"><a href="X"><img src="images/discover_button.svg" alt="Discover" class="CTA" ></a></div>
+          <span class="exhibit-home-span"><a href="virtual-reality.html" title="Virtual Reality Exhibit">"Virtual Reality is a whole new world!"</a></span>
+          <span class="exhibit-home-span"><a href="virtual-reality.html" title="Virtual Reality Exhibit">– Emma (14)</a></span>
+          <div class="exhibit-img-div"><a href="virtual-reality.html" title="Virtual Reality Exhibit"><img src="images/virtual-reality-5.svg" alt="Virtual Reality" class="vr-image exhibits-image" ></a></div>
+          <a href="virtual-reality.html" class="discover-cta" title="Virtual Reality Exhibit">Discover</a>
         </div>
       </section>
       <section class="main-visit-section">
         <h2 class="trigger-main" id="trigger-main-id">Are. You. Ready?</h2>
-      
-        <a href="#location-id" title="Visit Us"><img src="images/visit-us-after.svg" id="visit-us-icon" alt="Visit Us"></a>
+        <div class="visit-us-cta-div" >
+          <a href="#location-id" title="Visit Us" class="visit-us-cta"><img class="play-icon-class" src="images/play-icon.svg" alt="Pointer Icon"><span class="visit-us-span">Visit Us</span></a>
+        </div>
         <div class="toggle-display-div-visit-info">
           <div>
             <h3 id="location-id">Location</h3>
             <p>Kongens gate 18, 0153 Oslo, Norway</p>
             <p>Scandinavia, Europe, Tellus, Solar System, Milkyway, Universe</p>
             <p>Travel by Foot, Train, Plane, Space Ship or Other</p>
-            <iframe class="google-maps-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2000.2417889987282!2d10.741214016095892!3d59.911534481866376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416e881640dc49%3A0x1e109e6c1bd040ef!2sKongens%20gate%2018%2C%200153%20Oslo!5e0!3m2!1sen!2sno!4v1642941441475!5m2!1sen!2sno" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+          <div class="container-google-maps-div">
+            <iframe class="google-maps-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2000.2417889987282!2d10.741214016095892!3d59.911534481866376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416e881640dc49%3A0x1e109e6c1bd040ef!2sKongens%20gate%2018%2C%200153%20Oslo!5e0!3m2!1sen!2sno!4v1642941441475!5m2!1sen!2sno" title="Google maps of CSMO location" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
           </div>
           <div>
             <h3>Opening Hours:</h3>
@@ -101,13 +131,15 @@
           <div>
             <h3>Accessibility:</h3>
             <p>The museum has wheelchair accessibility ramps.
-              It also has audio guides and braille display signs for the visually impaired.</p>
+              It also has audio guides and braille display signs for the visually impaired.
+            </p>
           </div>
           <div>
             <h3>Shop:</h3>
             <p>Our shop offers a range of souvenirs from the museum as well as great gifts
               and activity packs that allow you to continue to explore science even after
-              you've left the museum.</p>
+              you've left the museum.
+            </p>
           </div>
         </div>
         <div class="to-top-div">
@@ -116,18 +148,18 @@
       </section>
     </main>
     <footer>
-        <div class="social-media-section">
-            <a href="facebook.com" title="Facebook"><img src="images/Facebook.svg" alt="Facebook" class="social-media-icon" ></a>
-            <a href="pinterest.com" title="Pinterest"><img src="images/Pinterest.svg" alt="Pinterest" class="social-media-icon" ></a>
-            <a href="youtube.com" title="Youtube"> <img src="images/Youtube.svg" alt="Youtube" class="social-media-icon" ></a>
-            <a href="instagram.com" title="Instagram"><img src="images/Instagram.svg" alt="Instagram" class="social-media-icon" ></a>
-        </div>
-        <div class="footer-address">
-            <span>Visit: Kongens gate 18, 0159 Oslo, Norway</span>
-        </div>
-        <div class="footer-copyright">
-            <span>© 2022 Community Science Museum Oslo| All rights reserved.</span>
-        </div>
+      <div class="social-media-section">
+        <a href="facebook.com" title="Facebook"><img src="images/Facebook.svg" alt="Facebook" class="social-media-icon" ></a>
+        <a href="pinterest.com" title="Pinterest"><img src="images/Pinterest.svg" alt="Pinterest" class="social-media-icon" ></a>
+        <a href="youtube.com" title="Youtube"> <img src="images/Youtube.svg" alt="Youtube" class="social-media-icon" ></a>
+        <a href="instagram.com" title="Instagram"><img src="images/Instagram.svg" alt="Instagram" class="social-media-icon" ></a>
+      </div>
+      <div class="footer-address">
+        <span>Visit: Kongens gate 18, 0159 Oslo, Norway</span>
+      </div>
+      <div class="footer-copyright">
+        <span>© 2022 CSMO | All rights reserved.</span>
+      </div>
     </footer>
   </body>
 </html>
