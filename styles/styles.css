@@ -128,7 +128,7 @@ header {
 .header-menu-item-current {
     border: solid;
     border-width: 1px;
-    border-color: white;
+    border-color: #F85093;
     padding-left: 25px;
     padding-right: 25px;
     border-width: medium;
@@ -220,6 +220,10 @@ footer {
 
 #location-id {
     margin: 6px;
+}
+
+.cta-color, .visit-us-span {
+    color: #F85093;
 }
 
 .google-maps-iframe {
